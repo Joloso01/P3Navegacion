@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment1">
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.p3navegacion.Fragment1"
+        android:label="fragment_1"
+        tools:layout="@layout/fragment_1" />
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.p3navegacion.fragment2"
+        android:label="fragment_fragment2"
+        tools:layout="@layout/fragment_fragment2" >
+        <action
+            android:id="@+id/action_fragment2_to_fragment3"
+            app:destination="@id/fragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.example.p3navegacion.fragment3"
+        android:label="fragment_fragment3"
+        tools:layout="@layout/fragment_fragment3" />
+    <fragment
+        android:id="@+id/fragmentDraw1"
+        android:name="com.example.p3navegacion.fragmentDraw1"
+        android:label="fragment_draw1"
+        tools:layout="@layout/fragment_draw1" />
+    <fragment
+        android:id="@+id/fragmentDraw2"
+        android:name="com.example.p3navegacion.fragmentDraw2"
+        android:label="fragment_draw2"
+        tools:layout="@layout/fragment_draw2" />
+    <fragment
+        android:id="@+id/fragmentOptions1"
+        android:name="com.example.p3navegacion.fragmentOptions1"
+        android:label="fragment_options1"
+        tools:layout="@layout/fragment_options1" >
+        <action
+            android:id="@+id/action_fragmentOptions1_to_fragmentOptions2"
+            app:destination="@id/fragmentOptions2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentOptions2"
+        android:name="com.example.p3navegacion.fragmentOptions2"
+        android:label="fragment_options2"
+        tools:layout="@layout/fragment_options2" />
+    <fragment
+        android:id="@+id/fragmentTab1"
+        android:name="com.example.p3navegacion.fragmentTab1"
+        android:label="fragment_tab1"
+        tools:layout="@layout/fragment_tab1" >
+        <action
+            android:id="@+id/action_fragmentTab1_to_fragmentTab2"
+            app:destination="@id/fragmentTab2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTab2"
+        android:name="com.example.p3navegacion.fragmentTab2"
+        android:label="fragment_tab2"
+        tools:layout="@layout/fragment_tab2" />
+</navigation>
