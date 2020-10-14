@@ -16,4 +16,8 @@
         android:icon="@android:drawable/ic_menu_directions"
         android:title="Pagina 2" />
 
+    <item
+        android:id="@+id/tabbed1Fragment"
+        android:icon="@android:drawable/ic_menu_directions"
+        android:title="Pagina T" />
 </menu>

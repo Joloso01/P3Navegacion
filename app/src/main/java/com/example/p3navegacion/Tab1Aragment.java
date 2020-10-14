@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link fragmentTab2#newInstance} factory method to
+ * Use the {@link Tab1Aragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class fragmentTab2 extends Fragment {
+public class Tab1Aragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +24,7 @@ public class fragmentTab2 extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public fragmentTab2() {
+    public Tab1Aragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +34,11 @@ public class fragmentTab2 extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment fragmentTab2.
+     * @return A new instance of fragment Tab1Aragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static fragmentTab2 newInstance(String param1, String param2) {
-        fragmentTab2 fragment = new fragmentTab2();
+    public static Tab1Aragment newInstance(String param1, String param2) {
+        Tab1Aragment fragment = new Tab1Aragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +59,6 @@ public class fragmentTab2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tab2, container, false);
+        return inflater.inflate(R.layout.fragment_tab1_aragment, container, false);
     }
 }
